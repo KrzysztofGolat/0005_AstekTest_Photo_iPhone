@@ -10,7 +10,7 @@
     
     <title>Photo iPhone</title>
     
-    <link href='https://fonts.googleapis.com/css?family=Oswald:700|Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:700,400|Open+Sans' rel='stylesheet' type='text/css'>
     
     <link type="text/css" rel="stylesheet" href="style/reset.css">
     <link type="text/css" rel="stylesheet" href="style/style.css">
@@ -22,9 +22,12 @@
     
     <header>
         <div class="header wrapper">
-            <div class="smartphone"></div>
-            <div>
-                <div class="logo"></div>
+            <div class="smartphone">
+                <img src="img/smartphone.png" alt="iPhone" />
+            </div><div class="hero">
+                <div class="logo">
+                    <img src="img/logo.png" alt="logo" />
+                </div>
                 <div class="motto">
                     <p>ZAWSZE <em>RÓB</em></p>
                     <p>CUDOWNE <em>ZDJĘCIA</em></p>
@@ -66,6 +69,7 @@
                 </section>
                 
                 
+<!--
                 <section class="circle">
                     <div class="circle-blue">
                         <div class="circle-white">
@@ -96,17 +100,29 @@
                         </div>
                     </div>
                 </section>
+-->
                 
                 
                 
                 
 
                 <div class="slider">
-<!--
-                    <img src="img/slider-left.png">
-                    <img src="img/slider-middle.jpg">
-                    <img src="img/slider-right.jpg">
--->
+                    <div class="slide active">
+                        <img src="img/slider-middle.jpg">
+                    </div>
+                    <div class="slide">
+                        <img src="img/slider-middle.jpg">
+                    </div>
+                    <div class="slide">
+                        <img src="img/slider-middle.jpg">
+                    </div>
+                    <span class="prev"></span>
+                    <span class="next"></span>
+                    <div class="pagination">
+                        <span class="active"></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
 
                 <div class="wroc">
@@ -119,18 +135,16 @@
             <div class="wrapper">
                 <div class="footer__glowny">
                     <div class="footer__twitter">
-                        <p>Twitter</p>
-                        <p>Jak zrobić timeline na FB?</p>
-                        <p>inspirationfeed.com/inspration/we...</p>
-                        <p>2 dni temu | Odpowiedz</p>
+                        <h3 class="footer__heading">Twitter</h3>
+                        <p>Jak zrobić timeline na FB? inspirationfeed.com/inspration/we...</p>
+                        <div class="footer__twitter__meta">2 dni temu | <a href="#">Odpowiedz</a></div>
                         <hr>
                         <p>Jak zrobić timeline na FB?</p>
                         <p>inspirationfeed.com/inspration/we...</p>
                         <p>2 dni temu | Odpowiedz</p>
-                    </div>
-                    <div class="footer__onas">
+                    </div><div class="footer__onas">
 
-                        <p>O nas</p>
+                        <h3 class="footer__heading">O nas</h3>
 
                         <p>Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer Donec id elit non mi porta gravida at eget metus.</p>
 
@@ -144,8 +158,7 @@
                 </div>    
 
                 <div class="footer__samdol">
-                    <div class="footer__copyright">Copyright (C) 2013 Grupa o2</div>
-                    <div class="footer__wszelkie">Wszelkie prawa zastrzeżone. Korzystanie z serwisu oznacza akceptację</div>
+                    <div class="footer__copyright">Copyright (C) 2013 Grupa o2</div><div class="footer__wszelkie">Wszelkie prawa zastrzeżone. Korzystanie z serwisu oznacza akceptację</div>
                 </div>
             </div>
         </footer>
