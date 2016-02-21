@@ -1,18 +1,17 @@
 body {
-    background-color: gray;
+    background-color: white;
 }
 
 .wrapper {
     max-width: 1700px;
     margin: auto;
-    background-color: #fff;
 }
 
 .header {
     background-image: url(../img/backgrnd-up.jpg), url(../img/backgrnd-gray.png);
     background-position: left top, left bottom;
     background-repeat: no-repeat, repeat;
-    height: 731px;
+    height: 100vh;
     position: relative;
 }
 
@@ -76,7 +75,24 @@ h1 {
 }
 
 .circle {
-    display: inline;
+    text-align: center;
+}
+
+.circle2 {
+    border: 16px;
+    background-color: white;
+    width: 174px;
+    height: 174px;
+    border-radius: 103px;
+    border-color: #53b8ee;
+    border-style: solid;
+    margin: auto;
+    display: inline-block;    
+    background: white; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left top, black, white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, black, white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, black, white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, black, white); /* Standard syntax */
 }
 
 .circle-blue {
@@ -85,6 +101,7 @@ h1 {
     height: 220px;
     border-radius: 110px;
     margin: auto;
+    display: inline-block;
 }
 
 .circle-white {
@@ -116,15 +133,13 @@ h1 {
 }
 
 .slider {
-    max-width: 980px;
-    height: 465px;
     margin: 130px auto 110px auto;
-    background: grey; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(#f0f0f0, #dad9d9); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#f0f0f0, #dad9d9); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#f0f0f0, #dad9d9); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#f0f0f0, #dad9d9); /* Standard syntax */
+    
+    background-image: url(../img/slider-left.png), url(../img/slider-middle.jpg), url(../img/slider-right.jpg);
+    background-position: left, left, left;
+    background-repeat: no-repeat, no-repeat, no-repeat;
 }
+
 
 .wroc {
     background-color: gray;
@@ -142,16 +157,37 @@ h1 {
 
 .footer__glowny {
     background-image: url(../img/footer-darkgray.png);
+    padding: 5px;
+    max-width: 1700px
 }
 
 .footer__twitter {
     color: white;
     max-width: 329px;
-    margin-left: 353px;
+    display: inline-block;
 }
 
 .footer__onas {
     color: white;
     max-width: 597px;
+    text-align: right;
+    display: inline-block;
+}
+
+.footer__samdol {
+    max-width: 1700px;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 0.6em;
+}
+
+.footer__copyright {
+    display: inline-block;
+    width: 50%;
+    text-align: left;
+}
+
+.footer__wszelkie {
+    display: inline-block;
+    width: 50%;
     text-align: right;
 }
