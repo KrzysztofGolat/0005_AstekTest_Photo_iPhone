@@ -1,0 +1,157 @@
+body {
+    background-color: gray;
+}
+
+.wrapper {
+    max-width: 1700px;
+    margin: auto;
+    background-color: #fff;
+}
+
+.header {
+    background-image: url(../img/backgrnd-up.jpg), url(../img/backgrnd-gray.png);
+    background-position: left top, left bottom;
+    background-repeat: no-repeat, repeat;
+    height: 731px;
+    position: relative;
+}
+
+.smartphone {
+    background-image: url(../img/smartphone.png);
+    width: 329px;
+    height: 711px;
+    position: absolute;
+    left: 353px;
+    bottom: 0px;
+}
+
+.logo {
+    background-image: url(../img/logo.png);
+    width: 625px;
+    height: 133px;
+    position: absolute;
+    left: 681px;
+    top: 50px;
+}
+
+.motto {
+    font-family: "Oswald", Arial, sans-serif;
+    font-size: 3em;
+    font-weight: 700;
+    color: white;
+    text-shadow: 1px 1px #464646;
+    text-transform: uppercase;
+    left: 737px;
+    top: 245px;
+    position: absolute;
+}
+
+.motto__text {
+    font-size: 100px;
+    position: absolute;
+    left: 737px;
+    bottom: 205px;
+}
+
+.motto > p > em {
+    color: #fcce00;
+}
+
+.motto__text {
+    font-family: "Open sans", Arial, sans-serif;
+    color: white;
+    text-shadow: 1px 1px #464646;
+    font-size: 18px;
+}
+
+h1 {
+    font-family: "Oswald", Arial, sans-serif;
+    font-weight: 700;
+    color: #212222;
+    font-size: 3em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 63px;
+}
+
+.circle {
+    display: inline;
+}
+
+.circle-blue {
+    background-color: #53b8ee;
+    width: 220px;
+    height: 220px;
+    border-radius: 110px;
+    margin: auto;
+}
+
+.circle-white {
+    background-color: white;
+    width: 190px;
+    height: 190px;
+    border-radius: 95px;
+    margin: auto;
+}
+
+.circle-icon {
+    margin-top: 24px;
+}
+
+.circle-text {
+    font-family: "Oswald", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: black;
+    text-transform: uppercase;
+    margin-top: 16px;
+    margin-bottom: 18px;
+}
+
+.circle-small-text {
+    font-family: "Oswald", Arial, sans-serif;
+    font-size: 16px;
+    color: black;
+}
+
+.slider {
+    max-width: 980px;
+    height: 465px;
+    margin: 130px auto 110px auto;
+    background: grey; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#f0f0f0, #dad9d9); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#f0f0f0, #dad9d9); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#f0f0f0, #dad9d9); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#f0f0f0, #dad9d9); /* Standard syntax */
+}
+
+.wroc {
+    background-color: gray;
+    height: 40px;
+    width: 100%;
+}
+
+.wroc__text {
+    background-color: pink;
+    color: darkgray;
+    max-width: 980px;
+    margin: auto;
+    text-align: right;
+}
+
+.footer__glowny {
+    background-image: url(../img/footer-darkgray.png);
+}
+
+.footer__twitter {
+    color: white;
+    max-width: 329px;
+    margin-left: 353px;
+}
+
+.footer__onas {
+    color: white;
+    max-width: 597px;
+    text-align: right;
+}
