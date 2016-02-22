@@ -11,21 +11,16 @@ header {
     background-image: url(../img/backgrnd-up.jpg), url(../img/backgrnd-gray.png);
     background-position: left top, left bottom;
     background-repeat: no-repeat, repeat;
-    // height: 100vh;
     position: relative;
 }
 
 .header {
-    padding-top: 20px;
+    //padding-bottom: 50px;
+    // padding-top: 25px;
 }
 
 .smartphone {
-    // background-image: url(../img/smartphone.png);
     width: 30%;
-    // height: 711px;
-    // position: absolute;
-    // left: 353px;
-    // bottom: 0px;
     display: inline-block;
     vertical-align: bottom;
 }
@@ -35,15 +30,8 @@ header {
 }
 
 .logo {
-    // background-image: url(../img/logo.png);
-    // width: 625px;
-    // height: 133px;
     max-width: 100%;
-    margin-bottom: 50px;
-    // background-size: 100%;
-    // position: absolute;
-    // left: 681px;
-    // top: 50px;
+    //margin-bottom: 50px;
 }
 
 .hero {
@@ -55,23 +43,16 @@ header {
 
 .motto {
     font-family: "Oswald", Arial, sans-serif;
-    font-size: 3em;
+    font-size: 4em;
     font-weight: 700;
     color: white;
     text-shadow: 1px 1px #464646;
     text-transform: uppercase;
-    margin-bottom: 100px;
-    // left: 737px;
-    // top: 245px;
-    // position: absolute;
+    //margin-bottom: 60px;
 }
 
-.motto__text {
-    font-size: 100px;
-    // position: absolute;
-    // left: 737px;
-    // bottom: 205px;
-    margin-bottom: 50px;
+.motto__text p {
+    font-size: 1.4em;
 }
 
 .motto > p > em {
@@ -85,6 +66,12 @@ header {
     font-size: 18px;
 }
 
+.counter {
+    max-height: 70px;
+    padding-top: 10px;
+    padding-bottom: 8px;
+}
+
 h1 {
     font-family: "Oswald", Arial, sans-serif;
     font-weight: 700;
@@ -94,6 +81,7 @@ h1 {
     text-align: center;
     margin-top: 90px;
     margin-bottom: 63px;
+    letter-spacing: -0.03em;
 }
 
 .circle {
@@ -110,15 +98,26 @@ h1 {
     border-style: solid;
     margin-bottom: 40px;
     display: inline-block;    
-    box-shadow: inset 5px 5px 10px rgba(0,0,0,0.2);
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,0.3);
     position: relative;
     transition: transform 0.5s;
+    z-index: 100;
 }
 
+.circle2__arrow {
+    display: inline-block;
+/*    position: relative;*/
+    z-index: 99; 
+    margin-bottom: 50px;
+}
+
+/*
 .circle2 + .circle2 {
     margin-left: 20px;
 }
+*/
 
+/*
 .circle2:after {
     content: '>';
     display: block;
@@ -127,9 +126,10 @@ h1 {
     transform: translateY(-50%);
     left: 100%;
 }
+*/
 
 .circle-icon {
-    margin-top: 24px;
+    margin-top: 18px;
 }
 
 .circle-text {
@@ -138,8 +138,8 @@ h1 {
     font-size: 24px;
     color: black;
     text-transform: uppercase;
-    margin-top: 16px;
-    margin-bottom: 18px;
+    margin-top: 10px;
+    margin-bottom: 14px;
 }
 
 .circle-small-text {
@@ -149,8 +149,9 @@ h1 {
 }
 
 .circle2:hover {
-    transform: scale(1.2);
-    border-color: yellow;
+    transform: scale(1.32);
+    border-color: #fcce00;
+    background-color: #fffbe8;
 }
 
 .slider {
@@ -184,12 +185,14 @@ h1 {
 
 .slider .prev {
     left: 0;
-    background-image: url();
+    background-image: url(../img/slider-left.png);
+    background-size: 90%;
 }
 
 .slider .next {
     right: 0;
-    background-image: url();
+    background-image: url(../img/slider-right.png);
+    background-size: 90%;
 }
 
 .slider .pagination {
@@ -258,7 +261,6 @@ h1 {
 }
 
 .footer__samdol {
-    // max-width: 1700px;
     font-family: "Open Sans", Arial, sans-serif;
     font-size: 0.6em;
 }
