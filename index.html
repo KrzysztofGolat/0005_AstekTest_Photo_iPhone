@@ -14,6 +14,8 @@
     
     <link type="text/css" rel="stylesheet" href="style/reset.css">
     <link type="text/css" rel="stylesheet" href="style/style.css">
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+
     
     <!-- <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/> -->
     
@@ -37,7 +39,12 @@
                     <p>Lorem Ipsum is simply dummy text of the</p>
                     <p>As been the industry standard dummy text</p>
                 </div>
-                <img class="counter" src="img/odliczanie.png" alt="counter">
+                
+                <div class="counter">
+
+                    <img class="counter" src="img/odliczanie.png" alt="counter"><div id="counter_2"></div>
+            
+                </div>
             </div>
         </div>
     </header>
@@ -155,5 +162,24 @@
         </footer>
     
     <script src="scripts/script.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="jquery.countdown.js" type="text/javascript" charset="utf-8"></script>
+    
+            <script type="text/javascript">
+     $(function(){
+       $('#counter').countdown({
+         image: 'img/digits.png',
+         startTime: '01:12:12:00'
+       });
+ 
+       $('#counter_2').countdown({
+         image: 'img/digits.png',
+         startTime: '09:22:27',
+         timerEnd: function(){ alert('end!'); },
+         format: 'hh:mm:ss'
+       });
+     });
+   </script>
+    
 </body>
 </html>
