@@ -102,21 +102,25 @@ h1 {
     position: relative;
     transition: transform 0.5s;
     z-index: 100;
+        
 }
 
 .circle2__arrow {
-    display: inline-block;
-    z-index: 99; 
-    margin-bottom: 50px;
+    display: inline;
+    z-index: 99;
 }
 
+.circle2__arrow img {
+    margin-bottom: 36px;
+}    
+    
 .circle-icon {
     margin-top: 18px;
 }
 
 .circle-text {
     font-family: "Oswald", Arial, sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 24px;
     color: black;
     text-transform: uppercase;
@@ -132,7 +136,7 @@ h1 {
 }
 
 .circle2:hover {
-    transform: scale(1.32);
+    transform: scale(1.33);
     border-color: #fcce00;
     background-color: #fffbe8;
 }
@@ -219,17 +223,25 @@ h1 {
 }
 
 .wroc {
-    background-color: gray;
-    height: 40px;
-    width: 100%;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 0.6em;
+    background-image: url(../img/pattern.png);
+    text-align: right;
 }
 
 .wroc__text {
-    background-color: pink;
-    color: darkgray;
-    max-width: 980px;
-    margin: auto;
-    text-align: right;
+    display: inline-block;
+    font-weight: bold;
+    margin: 1%;
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: bolder;
+    
+}
+
+.wroc__text a {
+    text-decoration: none;
+    color: black;
 }
 
 .footer__glowny {
@@ -257,6 +269,8 @@ h1 {
     letter-spacing: -0.03em;
     line-height: 1.5em;
     text-shadow: 1px 1px black;
+    margin-top: 14px;
+    margin-bottom: 10px;
 }
 
 .footer_twitter p {
