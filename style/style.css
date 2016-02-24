@@ -26,14 +26,15 @@ body {
 
 .logo {
     max-width: 100%;
-    //margin-bottom: 50px;
+        margin-bottom: 50px;
 }
 
 .hero {
     display: inline-block;
     width: 60%;
-    margin-left: 10%;
+    margin-left: 7%;
     vertical-align: bottom;
+    margin-top: 110px;
 }
 
 .motto {
@@ -43,7 +44,7 @@ body {
     color: white;
     text-shadow: 1px 1px #464646;
     text-transform: uppercase;
-    //margin-bottom: 60px;
+    margin-bottom: 60px;
 }
 
 .motto__text p {
@@ -59,12 +60,21 @@ body {
     color: white;
     text-shadow: 1px 1px #464646;
     font-size: 18px;
+    margin-bottom: 70px;
 }
 
 .counter {
     max-height: 70px;
-    padding-top: 10px;
-    padding-bottom: 8px;
+    padding: 0px 0 40px 90px;
+    background: url(../img/odliczanie.png) no-repeat left top;
+}
+
+#counter_2 {
+    transform: scale(0.9);
+}
+
+.cntSeparator {
+    visibility: hidden;
 }
 
 h1 {
@@ -225,7 +235,7 @@ h1 {
 .wroc {
     font-family: "Open Sans", Arial, sans-serif;
     font-size: 0.6em;
-    background-image: url(../img/pattern.png);
+    background-image: url(../img/pattern.png); 
     text-align: right;
 }
 
@@ -295,7 +305,10 @@ h1 {
 }
 
 .footer__twitter hr {
-    color: red;
+    background: grey;
+    height: 1px;
+    box-shadow: 1px 1px black;
+    border: none;
 }
 
 .footer__onas {
@@ -312,14 +325,15 @@ h1 {
 
 .footer__samdol {
     font-family: "Open Sans", Arial, sans-serif;
-    font-size: 0.6em;
+    font-size: 0.5em;
+        font-weight: bold;
 }
 
 .footer__copyright {
     display: inline-block;
     width: 49%;
     text-align: left;
-    font-weight: bold;
+
     margin: 1% 0 1% 1%;
     font-size: 1.2em;
 }
@@ -328,7 +342,7 @@ h1 {
     display: inline-block;
     width: 49%;
     text-align: right;
-    font-weight: bold;
+
     margin: 1% 1% 1% 0;
     font-size: 1.2em;
 }
