@@ -159,6 +159,12 @@ h1 {
 .slide {
     display: none;
     position: relative;
+    top: 0;
+    left: 0;
+}
+
+.active + .active {
+    margin-top: -100%;
 }
 
 .slide.active {

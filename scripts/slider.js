@@ -5,12 +5,13 @@ $('.prev').click(
             $(this).css({left: '0'});
         });
         
-        var $poprzedniSlajd = $('.active').prev();
+        var $poprzedniSlajd = $('.active').prev('.slide');
         if(!$poprzedniSlajd.length) { 
-            $poprzedniSlajd = $('.active').nextAll().last();
+            $poprzedniSlajd = $('.active').nextAll('.slide').last();
         }
         
-        $poprzedniSlajd.css({ left: '-100%' }).addClass('.active').animate({ left: '0' }, 1000);
+        console.log($poprzedniSlajd);
         
+        $poprzedniSlajd.css({left: '-100%' }).addClass('active').animate({ left: '0' }, 1000);
     }
 )
