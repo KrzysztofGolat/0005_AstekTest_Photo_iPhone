@@ -25,8 +25,12 @@ body {
 }
 
 .logo {
-    max-width: 100%;
-        margin-bottom: 50px;
+
+    margin-bottom: 50px;
+}
+
+.logo img {
+        max-width: 100%;
 }
 
 .hero {
@@ -107,7 +111,7 @@ h1 {
     position: relative;
     transition: transform 0.5s;
     z-index: 100;
-        
+    vertical-align: middle;
 }
 
 .circle2__arrow {
@@ -116,7 +120,7 @@ h1 {
 }
 
 .circle2__arrow img {
-    margin-bottom: 36px;
+    margin-bottom: 1%;
 }    
     
 .circle-icon {
@@ -149,10 +153,12 @@ h1 {
 .slider {
     margin: 100px auto 110px auto;
     position: relative;
+    overflow: hidden;
 }
 
 .slide {
     display: none;
+    position: relative;
 }
 
 .slide.active {
@@ -165,13 +171,14 @@ h1 {
 
 .slider__text {
     position: absolute;
-    left: 614px;
-    top: 150px;
+    left: 62%;
+    top: 32%;
     max-width: 24%;
     max-height: 20%;
     font-family: "Open Sans", Arial, sans-serif;
     font-weight: bold;
-    font-size: 1.17em;
+/*    font-size: 1.17em;*/
+    font-size: 115%;
     font-style: italic;
     letter-spacing: -0.03em;
     line-height: 1.8em;
@@ -181,7 +188,7 @@ h1 {
 .slider .next {
     display: block;
     height: 100%;
-    width: 80px;
+    width: 8%;
     position: absolute;
     top: 0;
     background-repeat: no-repeat;
@@ -326,14 +333,13 @@ h1 {
 .footer__samdol {
     font-family: "Open Sans", Arial, sans-serif;
     font-size: 0.5em;
-        font-weight: bold;
+    font-weight: bold;
 }
 
 .footer__copyright {
     display: inline-block;
     width: 49%;
     text-align: left;
-
     margin: 1% 0 1% 1%;
     font-size: 1.2em;
 }
