@@ -20,25 +20,43 @@ body {
     vertical-align: bottom;
 }
 
+@media screen and (max-width: 800px) {
+    .smartphone {
+        visibility: hidden;
+    }
+}
+
 .smartphone img {
     max-width: 100%;
 }
 
 .logo {
-
     margin-bottom: 50px;
 }
 
+@media screen and (max-width: 800px) {
+    .logo {
+        margin-bottom: 20px;
+    }
+}
+
 .logo img {
-        max-width: 100%;
+    max-width: 100%;
 }
 
 .hero {
     display: inline-block;
-    width: 60%;
+    max-width: 60%;
     margin-left: 7%;
     vertical-align: bottom;
     margin-top: 110px;
+}
+
+@media screen and (max-width: 800px) {
+    .hero {
+        margin-top: 20px;
+        margin-left: 0;
+    }
 }
 
 .motto {
@@ -49,10 +67,23 @@ body {
     text-shadow: 1px 1px #464646;
     text-transform: uppercase;
     margin-bottom: 60px;
+    letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: 800px) {
+    .motto {
+        font-size: 2.5em;
+    }
 }
 
 .motto__text p {
     font-size: 1.4em;
+}
+
+@media screen and (max-width: 800px) {
+    .motto__text p {
+        font-size: 1em;
+    }
 }
 
 .motto > p > em {
@@ -68,6 +99,7 @@ body {
 }
 
 .counter {
+    width: 400px;
     max-height: 70px;
     padding: 0px 0 40px 90px;
     background: url(../img/odliczanie.png) no-repeat left top;
@@ -75,6 +107,14 @@ body {
 
 #counter_2 {
     transform: scale(0.9);
+}
+
+.fb-like {
+    position: relative;
+    width: 55px;
+    left: 370px;
+    top: -70px;
+    margin: 5px;    
 }
 
 .cntSeparator {
@@ -91,6 +131,12 @@ h1 {
     margin-top: 90px;
     margin-bottom: 63px;
     letter-spacing: -0.03em;
+}
+
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: 2em;
+    }
 }
 
 .circle {
@@ -151,7 +197,7 @@ h1 {
 }
 
 .slider {
-    margin: 100px auto 110px auto;
+    margin: 100px auto 0px auto;
     position: relative;
     overflow: hidden;
 }
@@ -161,10 +207,6 @@ h1 {
     position: relative;
     top: 0;
     left: 0;
-}
-
-.active + .active {
-    margin-top: -100%;
 }
 
 .slide.active {
@@ -183,11 +225,16 @@ h1 {
     max-height: 20%;
     font-family: "Open Sans", Arial, sans-serif;
     font-weight: bold;
-/*    font-size: 1.17em;*/
     font-size: 115%;
     font-style: italic;
     letter-spacing: -0.03em;
     line-height: 1.8em;
+}
+
+@media screen and (max-width: 800px) {
+    .slider__text {
+        font-size: 83%;
+    }
 }
 
 .slider .prev,
@@ -200,6 +247,7 @@ h1 {
     background-repeat: no-repeat;
     background-position: center;
     z-index: 100;
+    cursor: pointer;
 }
 
 .slider .prev {
@@ -214,24 +262,22 @@ h1 {
     background-size: 90%;
 }
 
-.slider .pagination {
-    position: absolute;
-    top: 100%;
+.pagination {
     text-align: center;
     width: 100%;
+    margin-bottom: 100px;
 }
 
-.slider .pagination span {
+.pagination span {
     display: inline-block;
     width: 8px;
     height: 8px;
     border-radius: 100%;
-/*    border: 1px solid grey;*/
     background: grey;
     box-shadow: inset 0 2px 3px rgba(0,0,0,0.3);
 }
 
-.slider .pagination span.active {
+#pagination__active {
     background: white;
     width: 10px;
     height: 10px;
@@ -259,7 +305,6 @@ h1 {
     font-size: 1.2em;
     font-style: italic;
     font-weight: bolder;
-    
 }
 
 .wroc__text a {
@@ -274,14 +319,14 @@ h1 {
 }
 
 .footer__twitter {
-        font-family: "Open Sans", Arial, sans-serif;
+    font-family: "Open Sans", Arial, sans-serif;
     color: #d9d9d9;
     width: 28%;
     display: inline-block;
     margin: 1%;
-        text-shadow: 1px 1px black;
-        font-size: 14px;
-        vertical-align: top;
+    text-shadow: 1px 1px black;
+    font-size: 14px;
+    vertical-align: top;
 }
 
 .footer__heading {
@@ -336,6 +381,12 @@ h1 {
     margin: 1% 1% 1% 10%;
 }
 
+@media screen and (max-width: 800px) {
+    .footer__onas {
+        font-size: 10px;
+    }
+}
+
 .footer__samdol {
     font-family: "Open Sans", Arial, sans-serif;
     font-size: 0.5em;
@@ -354,7 +405,6 @@ h1 {
     display: inline-block;
     width: 49%;
     text-align: right;
-
     margin: 1% 1% 1% 0;
     font-size: 1.2em;
 }
